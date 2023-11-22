@@ -29,19 +29,14 @@ CREATE TABLE surveyQuestions (
                                 "optionAnother" boolean NOT NULL
 );
 
-CREATE TABLE "surveyQuestionsTypeOneFromList" (
+CREATE TABLE "surveyQuestionsOptionsList" (
                                                    "questionNumber" integer,
                                                    "surveyId" integer,
                                                    "optionsCount" integer NOT NULL,
-                                                   "id" integer PRIMARY KEY
+                                                   "id" integer PRIMARY KEY,
+                                                   "single" boolean NOT NULL
 );
 
-CREATE TABLE "surveyQuestionsTypeSeveralFromList" (
-                                                       "questionNumber" integer,
-                                                       "surveyId" integer,
-                                                       "countOptions" integer NOT NULL,
-                                                       "id" integer PRIMARY KEY
-);
 
 CREATE TABLE "surveyQuestionsTypeTextField" (
                                                 "questionNumber" integer,
